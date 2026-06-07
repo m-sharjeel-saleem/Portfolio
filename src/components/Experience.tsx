@@ -114,7 +114,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className={`text-lg ${textSecondaryClass} max-w-2xl mx-auto leading-relaxed`}>
-            Over 1+ years of experience building scalable web applications and leading development teams in fast-paced environments.
+            Experience across applied AI product development, automation, industrial software, and cross-platform delivery.
           </p>
         </motion.div>
 

@@ -75,8 +75,8 @@ const Hero = () => {
                 <span className={accentClass}>{personalInfo.name}</span>
               </h1>
               <p className={`text-xl ${textSecondaryClass}`}>
-                {personalInfo.title} crafting digital experiences with{' '}
-                <span className={`${textClass} font-semibold`}>1+ years</span> of expertise
+                {personalInfo.title} building practical AI products with{' '}
+                <span className={`${textClass} font-semibold`}>LLM systems</span>, strong software foundations, and product-minded execution
               </p>
               <p className={`text-lg ${textSecondaryClass} max-w-2xl`}>
                 {personalInfo.tagline}

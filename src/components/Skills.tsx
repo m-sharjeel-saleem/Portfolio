@@ -61,10 +61,11 @@ const Skills = () => {
   const skillCategories: { title: string; skills: string[] }[] = [
     { title: 'Programming Languages', skills: skillsData['Programming Languages'] },
     { title: 'JavaScript Libraries & Frameworks', skills: skillsData['JavaScript Libraries & Frameworks'] },
-    { title: 'Web Frameworks', skills: skillsData['Web Frameworks'] },
+    { title: 'AI Platforms & APIs', skills: skillsData['AI Platforms & APIs'] },
     { title: 'AI/ML', skills: skillsData['AI/ML'] },
-    { title: 'Optimization & Cost Control', skills: skillsData['Optimization & Cost Control'] },
-    { title: 'Prompt Engineering & AI Tools', skills: skillsData['Prompt Engineering & AI Tools'] },
+    { title: 'Backend & APIs', skills: skillsData['Backend & APIs'] },
+    { title: 'Optimization & Delivery', skills: skillsData['Optimization & Delivery'] },
+    { title: 'AI Dev Tools', skills: skillsData['AI Dev Tools'] },
     { title: 'Frontend', skills: skillsData['Frontend'] },
     { title: 'Mobile', skills: skillsData['Mobile'] },
     { title: 'Database', skills: skillsData['Database'] },
@@ -99,7 +100,7 @@ const Skills = () => {
             Technical Skills
           </h2>
           <p className={`text-lg ${textSecondaryClass} max-w-2xl mx-auto leading-relaxed`}>
-            Comprehensive expertise across modern development stack with focus on scalable web applications, AI/ML integration, prompt engineering tools, and token/cost optimization.
+            Applied engineering stack across LLM products, backend APIs, modern frontend delivery, and AI-assisted software workflows.
           </p>
         </motion.div>
 
