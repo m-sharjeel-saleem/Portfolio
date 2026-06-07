@@ -75,6 +75,9 @@ const Contact = () => {
   const accentClass = theme === 'dark' ? 'text-dark-accent' : 'text-blue-600'
   const inputBgClass = theme === 'dark' ? 'bg-dark-bg' : 'bg-white/90'
   const hoverBorderClass = theme === 'dark' ? 'hover:border-dark-accent' : 'hover:border-blue-400/70'
+  const inputClass = theme === 'dark'
+    ? `w-full px-4 py-3 ${inputBgClass}/90 backdrop-blur-sm border ${borderClass} rounded-lg text-dark-text placeholder:text-dark-text-secondary focus:outline-none focus:ring-2 focus:ring-dark-accent/50 focus:border-dark-accent transition-colors`
+    : `w-full px-4 py-3 ${inputBgClass}/90 backdrop-blur-sm border ${borderClass} rounded-lg text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400 transition-colors`
 
   return (
     <section className={`py-20 px-4 sm:px-6 lg:px-8 ${bgClass}`}>
@@ -193,7 +196,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
-                className={`w-full px-4 py-3 ${inputBgClass}/90 backdrop-blur-sm border ${borderClass} rounded-lg ${textClass} placeholder-${textSecondaryClass} focus:outline-none focus:ring-2 focus:ring-dark-accent/50 focus:${borderClass} transition-colors`}
+                className={inputClass}
                 placeholder="Your name"
               />
             </div>
@@ -207,7 +210,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
-                className={`w-full px-4 py-3 ${inputBgClass}/90 backdrop-blur-sm border ${borderClass} rounded-lg ${textClass} placeholder-${textSecondaryClass} focus:outline-none focus:ring-2 focus:ring-dark-accent/50 focus:${borderClass} transition-colors`}
+                className={inputClass}
                 placeholder="your.email@example.com"
               />
             </div>
@@ -221,7 +224,7 @@ const Contact = () => {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 required
                 rows={6}
-                className={`w-full px-4 py-3 ${inputBgClass}/90 backdrop-blur-sm border ${borderClass} rounded-lg ${textClass} placeholder-${textSecondaryClass} focus:outline-none focus:ring-2 focus:ring-dark-accent/50 focus:${borderClass} transition-colors resize-none`}
+                className={`${inputClass} resize-none`}
                 placeholder="Your message..."
               />
             </div>

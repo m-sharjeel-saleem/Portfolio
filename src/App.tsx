@@ -9,6 +9,7 @@ const Skills = lazy(() => import('./components/Skills'))
 const Experience = lazy(() => import('./components/Experience'))
 const Projects = lazy(() => import('./components/Projects'))
 const Certifications = lazy(() => import('./components/Certifications'))
+const Education = lazy(() => import('./components/Education'))
 const Contact = lazy(() => import('./components/Contact'))
 
 // Lightweight loading fallback
@@ -36,7 +37,7 @@ function AppContent() {
     const handleScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
-          const sections = ['home', 'skills', 'experience', 'projects', 'certifications', 'contact']
+          const sections = ['home', 'skills', 'experience', 'projects', 'certifications', 'education', 'contact']
           const scrollPosition = window.scrollY + 100
 
           for (const section of sections) {
@@ -87,6 +88,11 @@ function AppContent() {
           <Suspense fallback={<SectionLoader />}>
             <section id="certifications">
               <Certifications />
+            </section>
+          </Suspense>
+          <Suspense fallback={<SectionLoader />}>
+            <section id="education">
+              <Education />
             </section>
           </Suspense>
           <Suspense fallback={<SectionLoader />}>

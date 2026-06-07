@@ -28,6 +28,7 @@ const Navbar = ({ activeSection }: { activeSection: string }) => {
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'certifications', label: 'Certifications' },
+    { id: 'education', label: 'Education' },
     { id: 'contact', label: 'Contact' },
   ]
 
