@@ -4,37 +4,36 @@
 
 export const personalInfo = {
   name: "M. Sharjeel Saleem",
-  title: "AI Product Engineer",
-  subtitle: "Applied LLM Systems, Agentic Workflows, and Full-Stack Delivery",
-  tagline: "I build production-ready AI products that combine strong software engineering, applied LLM systems, and user-focused product execution.",
+  title: "Full-Stack AI Prompt Engineer",
+  subtitle: "Building AI-Driven Digital Experiences",
+  tagline: "Transforming ideas into intelligent solutions through the power of AI and modern technology",
   email: "sharry00010@gmail.com",
   phone: "+92 332 5760344",
-  location: "Islamabad, Pakistan",
+  location: "Pakistan",
   profileImage: "/profile_image.png",
   cvFile: "/M.Sharjeel_Saleem.pdf",
 
-  bio: "I'm M. Sharjeel Saleem, an AI Product Engineer focused on building useful, production-oriented AI systems instead of AI demos with surface-level polish. My work sits at the intersection of Python, TypeScript, LLM workflows, backend APIs, and modern product delivery.\n\nAt Sideline Technologies, I build cross-platform mobile and web applications powered by modern AI tooling and applied language-model workflows. I care most about systems that solve real user problems: retrieval-based assistants, AI-powered automation, multi-agent workflows, and developer tools that improve speed, quality, and decision-making.\n\nMy strongest edge is combining product thinking with implementation. I can move from idea to shipped interface, backend logic, prompt/system design, and deployment while keeping the work grounded in business value, usability, and technical credibility.",
+  bio: "I'm M. Sharjeel Saleem, a passionate Full-Stack AI Prompt Engineer who bridges the gap between cutting-edge artificial intelligence and practical software solutions. With over 1+ years of experience in AI-driven development and actively learning advanced AI/ML techniques, I specialize in creating intelligent applications that transform complex problems into elegant, user-friendly experiences.\n\nCurrently at Sideline Technologies, I leverage advanced AI tools like Cursor AI, Claude Code, and Trae AI to accelerate development workflows and build next-generation applications. My expertise spans from developing YOLOv8-powered computer vision systems for traffic management to creating AI-integrated communication platforms and machine learning models for predictive analytics.\n\nAs an AI Engineer in training, I'm continuously expanding my knowledge in deep learning, natural language processing, and modern AI frameworks. I believe in the power of AI to enhance human creativity and productivity, and I'm dedicated to crafting solutions that are not just functional, but truly intelligent.",
 
   social: {
-    github: "https://github.com/m-sharjeel-saleem",
+    github: "https://github.com/Sharjeel-Saleem-06",
     linkedin: "https://www.linkedin.com/in/msharjeelsaleem/",
     twitter: "https://twitter.com/sharjeel_dev",
     email: "mailto:sharry00010@gmail.com",
-    portfolio: "https://muhammad-sharjeel-portfolio.netlify.app/"
+    portfolio: "https://sharjeel-portfolio.netlify.app"
   }
 }
 
 export const skillsData = {
   "Programming Languages": ["JavaScript", "TypeScript", "Python", "Java", "Kotlin", "SQL"],
   "JavaScript Libraries & Frameworks": ["React.js", "Next.js", "Node.js", "Express.js"],
-  "AI Platforms & APIs": ["OpenAI GPT-4/4o", "Anthropic Claude", "Google Gemini", "Groq", "LangChain", "ChromaDB", "pgvector", "Supabase"],
-  "AI/ML": ["RAG", "Agentic AI Workflows", "Vector Search", "Structured Outputs", "Tool Calling", "Prompt Engineering", "YOLOv8", "OpenCV", "NLP"],
+  "Web Frameworks": ["Express.js", "Fastify", "FastAPI"],
+  "AI/ML": ["YOLOv8", "OpenCV", "NLP", "Deep Learning", "Machine Learning", "AI Prompt Engineering", "RAG", "Vector Search"],
   "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
-  "Backend & APIs": ["FastAPI", "Node.js", "Express.js", "REST APIs", "SSE Streaming", "PostgreSQL", "MySQL"],
   "Mobile": ["React Native", "Kotlin", "Java", "iOS (Swift)"],
   "Database": ["PostgreSQL", "MongoDB", "MySQL", "Supabase", "Firebase"],
-  "Optimization & Delivery": ["Prompt Budgeting", "LLM Cost Tuning", "Inference Efficiency", "GitHub Actions", "CI/CD", "Netlify", "Vercel"],
-  "AI Dev Tools": ["Cursor AI", "Claude Code", "Trae AI", "GitHub Copilot", "ChatGPT", "Windsurf"]
+  "Optimization & Cost Control": ["Kani Token Optimization (JavaScript)", "Prompt Budgeting", "LLM Cost Tuning", "Inference Efficiency"],
+  "Prompt Engineering & AI Tools": ["Cursor AI", "Claude", "Windsurf", "Trae AI", "Google Antigravity", "Vibe Coding"]
 }
 
 export const projects = [
@@ -245,13 +244,13 @@ export const projects = [
   {
     id: 9,
     title: "StudyFlow - AI-Powered Learning Platform",
-    description: "AI-powered gamified learning platform with adaptive quizzes, game modes, and leaderboards designed to make self-learning more engaging.",
-    longDescription: "StudyFlow is a gamified learning platform designed to make studying more interactive through AI-assisted quiz generation, achievement systems, and competitive learning mechanics. The product focuses on engagement, retention, and user motivation instead of passive content consumption.",
+    description: "AI-powered gamified learning platform with 10+ game modes, adaptive quizzes, and global leaderboards. Features AI-generated quizzes, achievement system, and 50K+ active learners across 120+ countries.",
+    longDescription: "StudyFlow is a cutting-edge gamified learning platform that transforms education into an engaging adventure. The platform uses AI to generate personalized quizzes tailored to each learner's style and knowledge level. With 10 exciting game modes including Adventure Mode, Battle Mode, Boss Fights, and Time Attack, learning becomes addictive and fun. The platform features global leaderboards, comprehensive analytics, and an achievement system to track progress.",
     technologies: ["React", "TypeScript", "Vite", "TailwindCSS", "ShadCN UI", "Framer Motion", "AI/ML", "Gamification"],
     category: "Web Application",
     featured: true,
     liveUrl: "https://studyflow-quizapp.netlify.app/",
-    githubUrl: null,
+    githubUrl: "https://github.com/Sharjeel-Saleem-06/Face-Reconition-Attendence-Sytem-",
     image: "/projects/studyflow.png",
     status: "Completed",
     year: "2025",
@@ -261,6 +260,8 @@ export const projects = [
       "Global Leaderboards",
       "Adaptive Learning System",
       "Achievement & XP System",
+      "50K+ Active Learners",
+      "120+ Countries",
       "Detailed Analytics Dashboard",
       "Multiple Quiz Categories",
       "Real-time Competitions"
@@ -275,7 +276,7 @@ export const projects = [
     category: "Computer Vision",
     featured: true,
     liveUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/Sharjeel-Saleem-06",
     image: "/projects/face-recognition.png",
     status: "Completed",
     year: "2024",
@@ -369,22 +370,22 @@ export const projects = [
   {
     id: 14,
     title: "HealthScribe AI",
-    description: "AI-assisted health documentation platform for extracting structured information from medical content and organizing patient-facing insights.",
-    longDescription: "HealthScribe AI is an applied AI health-document workflow focused on turning messy clinical information into cleaner, structured outputs. The product direction includes note extraction, health-metric tracking, and consistent documentation patterns that make medical information easier to review and act on.",
-    technologies: ["React", "TypeScript", "FastAPI", "OpenAI", "Speech-to-Text", "TailwindCSS", "Vite"],
+    description: "AI-powered health document management platform. Analyze medical records, track health metrics, and get personalized insights.",
+    longDescription: "HealthScribe AI is an innovative platform designed to revolutionize how individuals manage their health information. By leveraging advanced AI technology, it allows users to upload and analyze medical records, automatically extracting key information such as medications, allergies, and diagnoses. The system provides personalized health insights, tracks vital metrics over time, and ensures that critical health data is always accessible and organized.",
+    technologies: ["React", "TypeScript", "AI Integration", "TailwindCSS", "Vite", "Netlify"],
     category: "Web Application",
     featured: true,
     liveUrl: "https://healthscribee.netlify.app/",
-    githubUrl: null,
+    githubUrl: "https://github.com/Sharjeel-Saleem-06/Health_Scribe",
     image: "/projects/p-health.jpg",
     status: "Completed",
     year: "2025",
     features: [
-      "AI-assisted structured note generation",
+      "AI-powered medical record analysis",
       "Smart health metric tracking",
       "Personalized health insights",
       "Secure document storage",
-      "Documentation consistency workflows",
+      "Medication management",
       "Interactive health dashboard"
     ]
   },
@@ -397,7 +398,7 @@ export const projects = [
     category: "AI/RAG Application",
     featured: true,
     liveUrl: "https://docuchatai.lovable.app",
-    githubUrl: "https://github.com/m-sharjeel-saleem/docuchat-ai",
+    githubUrl: "https://github.com/Sharjeel-Saleem-06/docuchat-ai",
     image: "/projects/docuchat-ai.png",
     status: "Completed",
     year: "2025",
@@ -421,26 +422,30 @@ export const projects = [
   {
     id: 16,
     title: "CodeSentinel AI - AI-Powered Code Analysis",
-    description: "AI-assisted code review and static-analysis product for surfacing security issues, code quality risks, and actionable developer feedback.",
-    longDescription: "CodeSentinel AI is an applied developer-tooling project that combines static-analysis concepts with AI-assisted review workflows. The product is aimed at helping engineering teams catch security issues, complexity hotspots, and maintainability concerns earlier in the development lifecycle through faster, clearer feedback.",
-    technologies: ["TypeScript", "Node.js", "Anthropic Claude", "GitHub Actions", "Static Analysis", "OWASP", "Code Quality", "TailwindCSS"],
+    description: "Professional static code analysis platform with AI-powered security scanning. Detect OWASP Top 10 vulnerabilities, analyze code quality, and get intelligent optimization suggestions. Features multi-language support and real-time analysis.",
+    longDescription: "CodeSentinel AI is an enterprise-grade static code analysis tool that combines traditional security scanning with AI-powered intelligent optimization. The platform analyzes code across 15+ programming languages, detecting OWASP Top 10 vulnerabilities, code smells, and security issues in real-time. Using advanced AI algorithms, it provides context-aware suggestions for code improvements, best practices, and performance optimizations. Features include interactive control flow visualization, custom rule creation with AI assistance, senior architect-level reviews, and comprehensive export reports in multiple formats. The platform offers both enterprise-grade security analysis and AI-powered intelligent recommendations, making it perfect for development teams focused on code quality and security.",
+    technologies: ["React", "TypeScript", "AI/ML", "Static Analysis", "TailwindCSS", "shadcn/ui", "Security Scanning", "OWASP", "Code Quality", "Flow Visualization"],
     category: "DevTools/Security",
     featured: true,
     liveUrl: "https://codesentinelai.netlify.app/",
-    githubUrl: null,
+    githubUrl: "https://github.com/Sharjeel-Saleem-06/codesentinel-ai",
     image: "/projects/codesentinel-ai.png",
     status: "Completed",
     year: "2025",
     features: [
-      "AI-assisted pull request review",
+      "Multi-language support (15+ languages)",
       "OWASP Top 10 vulnerability detection",
       "Real-time code analysis",
       "AI-powered code optimization",
-      "Actionable developer feedback",
+      "Custom rule creation with AI",
+      "Senior architect-level reviews",
+      "Interactive control flow graphs",
       "Security analysis & scanning",
       "Code quality metrics",
       "Best practices enforcement",
-      "GitHub workflow integration",
+      "Export reports in multiple formats",
+      "Dark/Light theme support",
+      "Advanced code metrics",
       "Intelligent suggestions"
     ]
   },
@@ -620,36 +625,37 @@ export const experience = [
     position: "Full-Stack AI Prompt Engineer",
     company: "Sideline Technologies",
     companyUrl: "https://sideline-technologies.com",
-    location: "Remote",
+    location: "Onsite",
     duration: "Jun 2025 – Current",
     type: "Full-time",
-    description: "Building cross-platform mobile and web applications with applied AI integration, prompt systems, and modern developer tooling for faster, more reliable product delivery.",
+    description: "Building cross-platform mobile and web applications with AI integration. Leveraging advanced AI tools like Cursor AI, Claude Code, and Trae AI to accelerate development and improve productivity.",
     achievements: [
-      "Architect and ship cross-platform web and mobile applications using modern AI-assisted development workflows",
-      "Designed AI-powered product flows that turn unstructured user input into structured, usable outputs",
-      "Use Cursor AI, Claude Code, and Trae AI to speed up implementation, debugging, and delivery quality",
-      "Support product delivery across frontend, backend, prompt logic, and deployment concerns",
-      "Contributed reusable prompt patterns and AI-assisted workflows for the broader team",
-      "Owned Android and iOS app work from implementation through release support"
+      "Enabled team in AI prompt engineering for enhanced development workflows",
+      "Developed cross-platform mobile and web applications with AI integration",
+      "Utilized AI tools including Cursor AI, Claude Code, and Trae AI for accelerated development",
+      "Built intelligent applications that transform complex problems into elegant solutions",
+      "Implemented AI-powered features for enhanced user experience and productivity",
+      "Owned Android and iOS apps end-to-end (architecture to launch) and provide AI-powered support for both platforms"
     ],
-    technologies: ["Python", "TypeScript", "React", "Next.js", "Supabase", "OpenAI", "Claude", "Cursor AI", "Claude Code", "Trae AI", "Mobile Development"]
+    technologies: ["Python", "AI/ML", "YOLOv8", "Next.js", "React", "TypeScript", "Cursor AI", "Claude Code", "Trae AI", "Deep Learning", "Mobile Development"]
   },
   {
     id: 26,
     position: "Prompt Engineer",
     company: "ReactiveSpace",
     companyUrl: "https://reactivespace.com",
-    location: "Remote",
+    location: "Onsite",
     duration: "April 2025 - May 2025",
     type: "Contract",
-    description: "Worked on AI prompt engineering, product workflows, and AI-assisted feature delivery for communication-focused software products.",
+    description: "Specialized in AI prompt engineering and automation workflows. Developed innovative solutions using advanced AI tools and frameworks.",
     achievements: [
-      "Built the Kani Framework application using Next.js, TypeScript, React, and Tailwind CSS",
-      "Created NLP-driven chatbot flows for communication and lead qualification use cases",
-      "Used AI-assisted development workflows to speed up prototyping and shipping",
-      "Contributed prompt design patterns and automation ideas for product workflows"
+      "Automated workflows with Cursor AI for improved efficiency",
+      "Developed Kani Framework Application using Next.js, TypeScript, React, and Tailwind CSS with Cursor AI",
+      "Created NLP-based Chatbot with Cursor AI for intelligent communication",
+      "Implemented AI-driven automation solutions for business processes",
+      "Enhanced development productivity through AI tool integration"
     ],
-    technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Cursor AI", "NLP", "Prompt Engineering", "AI Automation"]
+    technologies: ["Cursor AI", "Next.js", "TypeScript", "React", "Tailwind CSS", "NLP", "AI Automation", "Chatbot Development"]
   },
   {
     id: 27,
@@ -659,38 +665,24 @@ export const experience = [
     location: "Remote",
     duration: "July 2024 - September 2024",
     type: "Internship",
-    description: "Completed a Python-focused internship covering automation, SCADA systems, industrial software workflows, and applied computer-vision projects.",
+    description: "Completed a comprehensive Python Developer internship focusing on data engineering, automation, and SCADA systems development.",
     achievements: [
-      "Built a Python-based Modbus simulator for automation testing and validation workflows",
-      "Created SCADA interfaces in Ignition Perspective for industrial monitoring use cases",
-      "Implemented new UI features and enhancements inside industrial software dashboards",
-      "Built a face-recognition attendance system with Python, OpenCV, Tkinter, Excel, and MySQL",
-      "Worked across documentation, dashboard design, and applied automation tasks during the internship"
+      "Developed Python-based Modbus simulator for automation testing and validation",
+      "Created SCADA UI with Ignition Perspective for industrial monitoring",
+      "Implemented new features and enhancements with Ignition Perspective",
+      "Built Face Recognition Attendance System using Python, OpenCV, Excel, Tkinter, and MySQL",
+      "Integrated Cursor AI for dashboard UI development and documentation",
+      "Applied real-time detection and recognition with CRUD operations and data integrity",
+      "Used ChatGPT and Cursor AI for comprehensive project documentation"
     ],
     technologies: ["Python", "SCADA", "Ignition Perspective", "OpenCV", "Modbus", "Automation", "Tkinter", "MySQL", "Excel", "Cursor AI", "Data Engineering"]
   }
 ]
 
 export const stats = [
-  { label: "AI Projects", value: "20+", icon: "🚀" },
-  { label: "Years Building", value: "1+", icon: "⭐" },
-  { label: "Core Focus", value: "LLM + Product", icon: "🧠" }
-]
-
-export const education = [
-  {
-    id: 34,
-    degree: "Bachelor of Software Engineering",
-    school: "Foundation University, Islamabad",
-    duration: "2021 – 2025",
-    grade: "CGPA: 3.41 / 4.0",
-    coursework: [
-      "Machine Learning",
-      "Software Design & Architecture",
-      "Database Management Systems",
-      "Software Re-Engineering"
-    ]
-  }
+  { label: "Projects", value: "14+", icon: "🚀" },
+  { label: "Years Exp", value: "1+", icon: "⭐" },
+  { label: "Client Satisfaction", value: "100%", icon: "💯" }
 ]
 
 export const certifications = [
