@@ -38,6 +38,29 @@ export const skillsData = {
 
 export const projects = [
   {
+    id: 0,
+    title: "CodeAtlas - Agentic Codebase Intelligence",
+    description: "An agentic platform that points a team of AI agents at any public GitHub repo — chat with the code, map its architecture, and run a verified security, performance, and logic review with full cost and trace observability.",
+    longDescription: "CodeAtlas is a production-style agentic system built on a LangGraph multi-agent pipeline: a Router classifies intent, a Retriever runs RAG over a pgvector store, Security/Performance/Logic agents review the code in parallel, and a Critic agent verifies every finding against the actual source to suppress hallucinations. It integrates GitHub through the Model Context Protocol (MCP) and ships a safety layer with prompt-injection defense and hard per-session cost caps. A Next.js dashboard streams each agent step with live token, latency, and cost metrics. Powered by Google Gemini.",
+    technologies: ["Python", "FastAPI", "LangGraph", "Google Gemini", "RAG", "pgvector", "Supabase", "Redis", "MCP", "Next.js", "TypeScript", "Tailwind CSS"],
+    category: "Agentic AI",
+    featured: true,
+    liveUrl: null,
+    githubUrl: "https://github.com/m-sharjeel-saleem/CodeAtlas",
+    image: "/projects/codeatlas.svg",
+    status: "Active",
+    year: "2026",
+    features: [
+      "Multi-agent LangGraph pipeline (router → retriever → reviewers → critic)",
+      "RAG over code with pgvector hybrid search",
+      "Parallel Security, Performance & Logic review agents",
+      "Critic agent verifies findings against source to cut hallucinations",
+      "GitHub integration via Model Context Protocol (MCP)",
+      "Live observability: per-run token, latency & cost tracking",
+      "Safety guardrails: prompt-injection defense + per-session cost caps"
+    ]
+  },
+  {
     id: 1,
     title: "ModelScope AI - Intelligent Model Intel",
     description: "A next-generation intelligence platform designed to analyze, compare, and recommend the best AI models for any use case using the ultra-fast Groq LPU engine.",
