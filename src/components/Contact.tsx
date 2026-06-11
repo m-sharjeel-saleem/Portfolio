@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send, CheckCircle, AlertCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle, AlertCircle } from 'lucide-react'
 import { personalInfo } from '../data/portfolio'
 import { useState } from 'react'
 import { useTheme } from '../contexts/ThemeContext'
@@ -148,6 +148,7 @@ const Contact = () => {
                 href={personalInfo.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub profile"
                 className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${
                   theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
                 }`}
@@ -158,6 +159,7 @@ const Contact = () => {
                 href={personalInfo.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
                 className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${
                   theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
                 }`}
@@ -165,14 +167,13 @@ const Contact = () => {
                 <Linkedin size={20} className={textClass} />
               </a>
               <a
-                href={personalInfo.social.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={personalInfo.social.email}
+                aria-label="Send an email"
                 className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${
                   theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
                 }`}
               >
-                <Twitter size={20} className={textClass} />
+                <Mail size={20} className={textClass} />
               </a>
             </div>
           </motion.div>

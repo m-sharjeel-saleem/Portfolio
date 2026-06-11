@@ -25,7 +25,7 @@ const Hero = () => {
   const handleDownloadCV = () => {
     const link = document.createElement('a')
     link.href = personalInfo.cvFile
-    link.download = 'M.Sharjeel_Saleem.pdf'
+    link.download = 'M_Sharjeel_Saleem_Resume.pdf'
     link.click()
   }
 
