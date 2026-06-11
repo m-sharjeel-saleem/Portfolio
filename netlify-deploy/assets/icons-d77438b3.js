@@ -8,7 +8,7 @@ import{r as n}from"./react-vendor-b993c031.js";/**
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const m=a=>a.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase().trim(),e=(a,o)=>{const c=n.forwardRef(({color:s="currentColor",size:t=24,strokeWidth:r=2,absoluteStrokeWidth:k,className:h="",children:y,...i},d)=>n.createElement("svg",{ref:d,...x,width:t,height:t,stroke:s,strokeWidth:k?Number(r)*24/Number(t):r,className:["lucide",`lucide-${m(a)}`,h].join(" "),...i},[...o.map(([p,l])=>n.createElement(p,l)),...Array.isArray(y)?y:[y]]));return c.displayName=`${a}`,c};/**
+ */const m=a=>a.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase().trim(),e=(a,o)=>{const r=n.forwardRef(({color:k="currentColor",size:t=24,strokeWidth:c=2,absoluteStrokeWidth:h,className:s="",children:y,...i},d)=>n.createElement("svg",{ref:d,...x,width:t,height:t,stroke:k,strokeWidth:h?Number(c)*24/Number(t):c,className:["lucide",`lucide-${m(a)}`,s].join(" "),...i},[...o.map(([p,l])=>n.createElement(p,l)),...Array.isArray(y)?y:[y]]));return r.displayName=`${a}`,r};/**
  * @license lucide-react v0.294.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -48,12 +48,12 @@ import{r as n}from"./react-vendor-b993c031.js";/**
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const z=e("Download",[["path",{d:"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",key:"ih7n3h"}],["polyline",{points:"7 10 12 15 17 10",key:"2ggqvy"}],["line",{x1:"12",x2:"12",y1:"15",y2:"3",key:"1vk2je"}]]);/**
+ */const q=e("Download",[["path",{d:"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4",key:"ih7n3h"}],["polyline",{points:"7 10 12 15 17 10",key:"2ggqvy"}],["line",{x1:"12",x2:"12",y1:"15",y2:"3",key:"1vk2je"}]]);/**
  * @license lucide-react v0.294.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const q=e("ExternalLink",[["path",{d:"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6",key:"a6xqqp"}],["polyline",{points:"15 3 21 3 21 9",key:"mznyad"}],["line",{x1:"10",x2:"21",y1:"14",y2:"3",key:"18c3s4"}]]);/**
+ */const z=e("ExternalLink",[["path",{d:"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6",key:"a6xqqp"}],["polyline",{points:"15 3 21 3 21 9",key:"mznyad"}],["line",{x1:"10",x2:"21",y1:"14",y2:"3",key:"18c3s4"}]]);/**
  * @license lucide-react v0.294.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -118,9 +118,4 @@ import{r as n}from"./react-vendor-b993c031.js";/**
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const H=e("Twitter",[["path",{d:"M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z",key:"pff0z6"}]]);/**
- * @license lucide-react v0.294.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */const N=e("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]);export{g as A,f as B,b as C,z as D,q as E,L as G,j as I,B as L,I as M,Z as P,D as S,H as T,N as X,P as a,w as b,G as c,E as d,S as e,A as f,u as g,C as h,M as i,$ as j};
+ */const H=e("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]);export{g as A,f as B,b as C,q as D,z as E,L as G,j as I,B as L,I as M,Z as P,D as S,H as X,P as a,w as b,G as c,E as d,S as e,A as f,u as g,C as h,M as i,$ as j};

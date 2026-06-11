@@ -38,6 +38,30 @@ export const skillsData = {
 
 export const projects = [
   {
+    id: 100,
+    title: "CASARA - Automated PR Security Review",
+    description: "A GitHub-native, multi-agent security review system that scans every pull request, grounds LLM agents in deterministic scanner output, computes a composite risk score, and automatically blocks risky merges. Backed by a formal MS/PhD research proposal.",
+    longDescription: "CASARA (Contextual Automated Security Analysis and Risk Assessment) reviews pull requests by orchestrating deterministic scanners (Semgrep, Bandit, Gitleaks) as grounding context for specialized LLM agents (Security and Logic), then cross-validates findings — an issue confirmed by both a scanner and an agent is marked verified. It computes a composite risk score across SAST, SCA, secrets, and context dimensions, hard-blocks merges on any critical or verified-high finding via the GitHub commit-status API, and posts a single consolidated review comment. Built lean and production-pragmatic: FastAPI background tasks (no Celery), in-process SSE, and SQLite — with a real-time Next.js dashboard. Underpinned by a formal research proposal targeting IEEE TSE / ISSTA.",
+    technologies: ["Python", "FastAPI", "Google Gemini", "Multi-Agent", "Semgrep", "Bandit", "Gitleaks", "GitHub API", "DevSecOps", "SAST", "Next.js", "SQLite"],
+    category: "Agentic AI",
+    featured: true,
+    liveUrl: null,
+    githubUrl: "https://github.com/m-sharjeel-saleem/CASARA",
+    image: "/projects/casara.svg",
+    status: "Active",
+    year: "2026",
+    features: [
+      "GitHub webhook with HMAC-SHA256 verification and background processing",
+      "Scanner-grounded multi-agent review (Security + Logic agents)",
+      "Cross-validation: findings confirmed by scanner + agent marked verified",
+      "Composite risk score (SAST · SCA · Secrets · Context) with merge gating",
+      "Hard-blocks merges on critical / verified-high findings via commit status",
+      "Real-time Next.js dashboard with live SSE review feed",
+      "Lean architecture — no Celery/Redis; FastAPI tasks + SQLite",
+      "Backed by a formal MS/PhD research proposal"
+    ]
+  },
+  {
     id: 0,
     title: "CodeAtlas - Agentic Codebase Intelligence",
     description: "An agentic platform that points a team of AI agents at any public GitHub repo — chat with the code, map its architecture, and run a verified security, performance, and logic review with full cost and trace observability.",

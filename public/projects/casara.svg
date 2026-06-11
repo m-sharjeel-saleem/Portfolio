@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a111c"/><stop offset="1" stop-color="#070b12"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientTransform="translate(200 120) scale(520)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee" stop-opacity="0.30"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientTransform="translate(1040 100) scale(440)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34d399" stop-opacity="0.18"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22d3ee"/><stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#fff"/><stop offset="0.6" stop-color="#67e8f9"/><stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#dots)"/>
+  <rect width="1200" height="675" fill="url(#glow1)"/>
+  <rect width="1200" height="675" fill="url(#glow2)"/>
+
+  <!-- Logo + wordmark -->
+  <g transform="translate(96 92)">
+    <path d="M34 4 L60 13 V33 C60 49 50 60 34 64 C18 60 8 49 8 33 V13 Z" fill="url(#acc)" fill-opacity="0.12" stroke="url(#acc)" stroke-width="2.5"/>
+    <circle cx="34" cy="33" r="15" stroke="url(#acc)" stroke-width="2" stroke-opacity="0.5"/>
+    <circle cx="34" cy="33" r="8" stroke="url(#acc)" stroke-width="2" stroke-opacity="0.8"/>
+    <path d="M34 33 L34 18" stroke="url(#acc)" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="42" cy="40" r="3" fill="#34d399"/>
+    <text x="84" y="30" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#ffffff">CASARA</text>
+    <text x="85" y="56" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#7d8aa0">Contextual Automated Security Analysis &amp; Risk Assessment</text>
+  </g>
+
+  <!-- Headline -->
+  <text x="96" y="300" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="800" fill="url(#title)">Automated security review</text>
+  <text x="96" y="368" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="800" fill="#e6edf5">for every pull request.</text>
+  <text x="98" y="414" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8493a8">Scanner-grounded multi-agent analysis · composite risk score · automatic merge gating</text>
+
+  <!-- Pipeline motif -->
+  <g transform="translate(96 480)" font-family="Inter, system-ui, sans-serif">
+    <line x1="150" y1="44" x2="1010" y2="44" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+    <g font-size="14" font-weight="600">
+      <g transform="translate(0 0)"><rect width="160" height="88" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5"/><text x="20" y="34" fill="#e6edf5">Webhook</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">HMAC verify</text></g>
+      <g transform="translate(205 0)"><rect width="160" height="88" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5"/><text x="20" y="34" fill="#e6edf5">Scanners</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">Semgrep·Bandit·Gitleaks</text></g>
+      <g transform="translate(410 0)"><rect width="160" height="88" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5"/><text x="20" y="34" fill="#e6edf5">Agents</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">Security·Logic</text></g>
+      <g transform="translate(615 0)"><rect width="160" height="88" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5"/><text x="20" y="34" fill="#e6edf5">Risk Score</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">composite + gate</text></g>
+      <g transform="translate(820 0)"><rect width="190" height="88" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#34d399" stroke-opacity="0.55"/><text x="20" y="34" fill="#e6edf5">PR Gate</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">block / pass</text></g>
+    </g>
+  </g>
+
+  <g transform="translate(96 624)" font-family="JetBrains Mono, monospace" font-size="13" fill="#73839a">
+    <text x="0" y="0">Python · FastAPI · Gemini · multi-agent · SAST · DevSecOps · Next.js</text>
+  </g>
+</svg>
