@@ -5,7 +5,7 @@
 export const personalInfo = {
   name: "M. Sharjeel Saleem",
   title: "AI-Native Full-Stack Engineer",
-  subtitle: "Generative AI & LLM Engineer | AI Automation & Data Analytics Developer",
+  subtitle: "Generative AI & LLM Engineer | AI Automation Developer",
   tagline: "I build production-ready Generative AI, LLM, and agentic systems across web, mobile, data analytics pipelines, and business-automation workflows.",
   email: "sharry00010@gmail.com",
   phone: "+92 332 5760344",
