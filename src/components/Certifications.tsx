@@ -1,26 +1,26 @@
-import { motion } from 'framer-motion'
-import { Award, Calendar } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Award, Calendar, ChevronDown, ChevronUp } from 'lucide-react'
 import { certifications } from '../data/portfolio'
 import { useTheme } from '../contexts/ThemeContext'
-import { memo } from 'react'
+import { memo, useState } from 'react'
 
 const CertificationCard = memo(({ cert, index, theme, cardBgClass, borderClass, textClass, textSecondaryClass, hoverBorderClass, surfaceClass, gradientClass }: any) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.95, y: 30 }}
     whileInView={{ opacity: 1, scale: 1, y: 0 }}
     viewport={{ once: true, margin: '-50px' }}
-    transition={{ delay: Math.min(index * 0.1, 0.5), duration: 0.5, type: 'spring' }}
-    whileHover={{ y: -8, transition: { duration: 0.3 } }}
+    transition={{ delay: Math.min(index * 0.1, 0.4), duration: 0.45, type: 'spring' }}
+    whileHover={{ y: -6, transition: { duration: 0.25 } }}
     className={`${cardBgClass} border-2 ${borderClass} rounded-2xl overflow-hidden ${hoverBorderClass} transition-all duration-300 group shadow-xl hover:shadow-2xl ${
       theme === 'dark' ? 'hover:shadow-purple-500/20' : 'hover:shadow-purple-500/15'
-    } flex flex-col md:flex-row h-full`}
+    } flex flex-col md:flex-row`}
   >
     {/* Certification Image */}
-    <div className={`relative w-full md:w-2/5 md:min-h-[240px] overflow-hidden ${surfaceClass} flex-shrink-0 border-b-2 md:border-b-0 md:border-r-2 ${borderClass}`}>
+    <div className={`relative w-full md:w-2/5 md:min-h-[220px] overflow-hidden ${surfaceClass} flex-shrink-0 border-b-2 md:border-b-0 md:border-r-2 ${borderClass}`}>
       <motion.div
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.4 }}
-        className="w-full h-full flex items-center justify-center p-6"
+        whileHover={{ scale: 1.04 }}
+        transition={{ duration: 0.35 }}
+        className="w-full h-full flex items-center justify-center p-6 min-h-[160px] md:min-h-0"
       >
         <img
           src={cert.image}
@@ -41,16 +41,16 @@ const CertificationCard = memo(({ cert, index, theme, cardBgClass, borderClass, 
             {cert.issuer}
           </span>
         </div>
-        
-        <h3 className={`text-2xl font-bold ${textClass} mb-2 group-hover:${theme === 'dark' ? 'text-purple-300' : 'text-purple-700'} transition-colors leading-tight`}>
+
+        <h3 className={`text-xl md:text-2xl font-bold ${textClass} mb-2 leading-tight`}>
           {cert.title}
         </h3>
-        
+
         <div className="flex items-center gap-1.5 mb-4">
           <Calendar className={`w-4 h-4 ${textSecondaryClass}`} />
           <span className={`text-xs font-medium ${textSecondaryClass}`}>{cert.date}</span>
         </div>
-        
+
         <p className={`${textSecondaryClass} text-sm mb-6 leading-relaxed`}>
           {cert.description}
         </p>
@@ -75,6 +75,11 @@ CertificationCard.displayName = 'CertificationCard'
 
 const Certifications = () => {
   const { theme } = useTheme()
+  const [showAll, setShowAll] = useState(false)
+
+  const INITIAL_COUNT = 2
+  const visibleCerts = showAll ? certifications : certifications.slice(0, INITIAL_COUNT)
+  const hiddenCount = certifications.length - INITIAL_COUNT
 
   const bgClass = theme === 'dark' ? 'bg-dark-bg/50' : 'bg-gradient-to-br from-purple-50/50 via-white to-blue-50/30'
   const cardBgClass = theme === 'dark'
@@ -115,9 +120,9 @@ const Certifications = () => {
           </p>
         </motion.div>
 
-        {/* Certifications Feed */}
+        {/* Featured Certifications — always visible */}
         <div className="flex flex-col gap-8">
-          {certifications.map((cert, index) => (
+          {visibleCerts.map((cert, index) => (
             <CertificationCard
               key={cert.id}
               cert={cert}
@@ -133,6 +138,73 @@ const Certifications = () => {
             />
           ))}
         </div>
+
+        {/* Collapsed certs — animated expand */}
+        <AnimatePresence>
+          {showAll && (
+            <motion.div
+              key="extra-certs"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.45, ease: 'easeInOut' }}
+              className="overflow-hidden"
+            >
+              {/* gap between visible and extra */}
+              <div className="mt-8 flex flex-col gap-8">
+                {certifications.slice(INITIAL_COUNT).map((cert, index) => (
+                  <CertificationCard
+                    key={cert.id}
+                    cert={cert}
+                    index={index}
+                    theme={theme}
+                    cardBgClass={cardBgClass}
+                    borderClass={borderClass}
+                    textClass={textClass}
+                    textSecondaryClass={textSecondaryClass}
+                    hoverBorderClass={hoverBorderClass}
+                    surfaceClass={surfaceClass}
+                    gradientClass={gradientClass}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* View All / Show Less toggle button */}
+        {certifications.length > INITIAL_COUNT && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.35, delay: 0.2 }}
+            className="flex justify-center mt-10"
+          >
+            <motion.button
+              onClick={() => setShowAll(prev => !prev)}
+              whileHover={{ scale: 1.04, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className={`flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-sm transition-all duration-300 border-2 shadow-lg ${
+                theme === 'dark'
+                  ? 'bg-dark-surface border-purple-500/40 text-purple-300 hover:bg-purple-600/20 hover:border-purple-400/70 hover:shadow-purple-500/20 hover:shadow-xl'
+                  : 'bg-white border-purple-300/60 text-purple-700 hover:bg-purple-50 hover:border-purple-400 hover:shadow-purple-500/15 hover:shadow-xl'
+              }`}
+            >
+              {showAll ? (
+                <>
+                  <ChevronUp className="w-4 h-4" />
+                  Show Less
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="w-4 h-4" />
+                  View All {hiddenCount} More Certifications
+                </>
+              )}
+            </motion.button>
+          </motion.div>
+        )}
       </div>
     </section>
   )

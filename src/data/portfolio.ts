@@ -743,6 +743,15 @@ export const education = [
 
 export const certifications = [
   {
+    id: 35,
+    title: "The Data Analyst Course: Complete Data Analyst Bootcamp",
+    issuer: "Udemy",
+    date: "July 14, 2026",
+    description: "Completed a comprehensive 21.5-hour data analyst bootcamp covering the full spectrum of data analysis — from data collection, cleaning, and transformation to statistical analysis, visualization, and dashboarding with real-world datasets.",
+    skills: ["Data Analysis", "Python", "Statistics", "Data Visualization", "Pandas", "SQL"],
+    image: "/certifications/cert7.png"
+  },
+  {
     id: 28,
     title: "Discover the Art of Prompting",
     issuer: "Coursera",
