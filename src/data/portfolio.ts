@@ -5,15 +5,15 @@
 export const personalInfo = {
   name: "M. Sharjeel Saleem",
   title: "AI-Native Full-Stack Engineer",
-  subtitle: "Generative AI & LLM Engineer | AI Automation Developer",
-  tagline: "I build production-ready Generative AI, LLM, and agentic systems across web, mobile, and business-automation workflows.",
+  subtitle: "Generative AI & LLM Engineer | AI Automation & Data Analytics Developer",
+  tagline: "I build production-ready Generative AI, LLM, and agentic systems across web, mobile, data analytics pipelines, and business-automation workflows.",
   email: "sharry00010@gmail.com",
   phone: "+92 332 5760344",
   location: "Islamabad, Pakistan",
   profileImage: "/profile_image.png",
   cvFile: "/M_Sharjeel_Saleem_Resume.pdf",
 
-  bio: "I'm M. Sharjeel Saleem, an AI-Native Full-Stack Engineer and AI Automation Developer focused on building production-ready Generative AI, LLM, and agentic systems. My work sits at the intersection of Python, TypeScript, agentic workflows, backend APIs, and modern product delivery.\n\nI design and deploy real-time AI automations that integrate language models with SaaS tools (n8n, Make, custom orchestrators) and ship cross-platform web and mobile applications power-assisted by modern AI tooling. I focus on creating systems that solve real business problems: RAG-based systems, secure multi-agent pipelines, cost-effective API solutions, and automated workflows with precision and observability.",
+  bio: "I'm M. Sharjeel Saleem, an AI-Native Full-Stack Engineer and AI Automation Developer focused on building production-ready Generative AI, LLM, and agentic systems. My work sits at the intersection of Python, TypeScript, agentic workflows, backend APIs, data analytics, and modern product delivery.\n\nI design and deploy real-time AI automations that integrate language models with SaaS tools (n8n, Make, custom orchestrators) and ship cross-platform web and mobile applications power-assisted by modern AI tooling. I also work with data analytics pipelines — turning raw data into structured insights that drive business decisions. My focus is on systems that solve real problems: RAG pipelines, secure multi-agent systems, automated workflows, and data-driven automation — all built with precision and observability.",
 
   social: {
     github: "https://github.com/m-sharjeel-saleem",
