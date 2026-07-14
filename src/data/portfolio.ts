@@ -721,7 +721,7 @@ export const experience = [
 
 export const stats = [
   { label: "AI Projects", value: "20+", icon: "🚀" },
-  { label: "Years Building", value: "1+", icon: "⭐" },
+  { label: "Years Building", value: "2+", icon: "⭐" },
   { label: "Core Focus", value: "LLM + Product", icon: "🧠" }
 ]
 
