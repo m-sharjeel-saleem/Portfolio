@@ -56,8 +56,8 @@ const Contact = () => {
       console.error('EmailJS Error:', error)
       setSubmitStatus('error')
       setStatusMessage(
-        error instanceof Error 
-          ? error.message 
+        error instanceof Error
+          ? error.message
           : 'Failed to send message. Please try again or contact me directly via email.'
       )
     } finally {
@@ -66,8 +66,8 @@ const Contact = () => {
   }
 
   const bgClass = theme === 'dark' ? 'bg-dark-bg/80 backdrop-blur-sm' : 'bg-gradient-to-br from-gray-50/90 via-white/90 to-blue-50/30 backdrop-blur-sm'
-  const surfaceClass = theme === 'dark' 
-    ? 'bg-dark-surface' 
+  const surfaceClass = theme === 'dark'
+    ? 'bg-dark-surface'
     : 'bg-gradient-to-br from-white/95 via-white/90 to-blue-50/40 backdrop-blur-md'
   const borderClass = theme === 'dark' ? 'border-dark-border' : 'border-gray-300/70'
   const textClass = theme === 'dark' ? 'text-dark-text' : 'text-gray-900'
@@ -149,9 +149,8 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub profile"
-                className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${
-                  theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
-                }`}
+                className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
+                  }`}
               >
                 <Github size={20} className={textClass} />
               </a>
@@ -160,18 +159,16 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
-                className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${
-                  theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
-                }`}
+                className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
+                  }`}
               >
                 <Linkedin size={20} className={textClass} />
               </a>
               <a
                 href={personalInfo.social.email}
                 aria-label="Send an email"
-                className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${
-                  theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
-                }`}
+                className={`p-3 ${theme === 'dark' ? 'bg-dark-surface' : 'bg-white/80 backdrop-blur-sm'} border-2 ${borderClass} rounded-lg ${hoverBorderClass} transition-all duration-200 ${theme === 'light' ? 'hover:bg-blue-50/90 hover:shadow-md' : ''
+                  }`}
               >
                 <Mail size={20} className={textClass} />
               </a>
@@ -234,15 +231,14 @@ const Contact = () => {
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className={`p-4 rounded-lg flex items-center gap-3 ${
-                  submitStatus === 'success'
+                className={`p-4 rounded-lg flex items-center gap-3 ${submitStatus === 'success'
                     ? theme === 'dark'
                       ? 'bg-green-900/30 border border-green-700/50 text-green-400'
                       : 'bg-green-50 border border-green-200 text-green-800'
                     : theme === 'dark'
-                    ? 'bg-red-900/30 border border-red-700/50 text-red-400'
-                    : 'bg-red-50 border border-red-200 text-red-800'
-                }`}
+                      ? 'bg-red-900/30 border border-red-700/50 text-red-400'
+                      : 'bg-red-50 border border-red-200 text-red-800'
+                  }`}
               >
                 {submitStatus === 'success' ? (
                   <CheckCircle size={20} className={theme === 'dark' ? 'text-green-400' : 'text-green-600'} />
@@ -258,9 +254,8 @@ const Contact = () => {
               whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
               type="submit"
               disabled={isSubmitting}
-              className={`w-full px-6 py-3 bg-dark-accent rounded-lg text-white hover:bg-blue-600 transition-colors flex items-center justify-center gap-2 ${
-                isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
-              }`}
+              className={`w-full px-6 py-3 bg-dark-accent rounded-lg text-white hover:bg-blue-600 transition-colors flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+                }`}
             >
               {isSubmitting ? (
                 <>

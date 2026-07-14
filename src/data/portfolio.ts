@@ -4,16 +4,16 @@
 
 export const personalInfo = {
   name: "M. Sharjeel Saleem",
-  title: "AI Product Engineer",
-  subtitle: "Applied LLM Systems, Agentic Workflows, and Full-Stack Delivery",
-  tagline: "I build production-ready AI products that combine strong software engineering, applied LLM systems, and user-focused product execution.",
+  title: "AI-Native Full-Stack Engineer",
+  subtitle: "Generative AI & LLM Engineer | AI Automation Developer",
+  tagline: "I build production-ready Generative AI, LLM, and agentic systems across web, mobile, and business-automation workflows.",
   email: "sharry00010@gmail.com",
   phone: "+92 332 5760344",
   location: "Islamabad, Pakistan",
   profileImage: "/profile_image.png",
   cvFile: "/M_Sharjeel_Saleem_Resume.pdf",
 
-  bio: "I'm M. Sharjeel Saleem, an AI Product Engineer focused on building useful, production-oriented AI systems instead of surface-level demos. My work sits at the intersection of Python, TypeScript, LLM workflows, backend APIs, and modern product delivery.\n\nAt Sideline Technologies, I build cross-platform mobile and web applications powered by modern AI tooling and applied language-model workflows. I care most about systems that solve real user problems: retrieval-based assistants, AI-powered automation, multi-agent workflows, and developer tools that improve speed, quality, and decision-making.\n\nMy strongest edge is combining product thinking with implementation. I can move from idea to shipped interface, backend logic, prompt and system design, and deployment while keeping the work grounded in business value, usability, and technical credibility.",
+  bio: "I'm M. Sharjeel Saleem, an AI-Native Full-Stack Engineer and AI Automation Developer focused on building production-ready Generative AI, LLM, and agentic systems. My work sits at the intersection of Python, TypeScript, agentic workflows, backend APIs, and modern product delivery.\n\nI design and deploy real-time AI automations that integrate language models with SaaS tools (n8n, Make, custom orchestrators) and ship cross-platform web and mobile applications power-assisted by modern AI tooling. I focus on creating systems that solve real business problems: RAG-based systems, secure multi-agent pipelines, cost-effective API solutions, and automated workflows with precision and observability.",
 
   social: {
     github: "https://github.com/m-sharjeel-saleem",
@@ -24,41 +24,38 @@ export const personalInfo = {
 }
 
 export const skillsData = {
-  "Programming Languages": ["JavaScript", "TypeScript", "Python", "Java", "Kotlin", "SQL"],
-  "JavaScript Libraries & Frameworks": ["React.js", "Next.js", "Node.js", "Express.js"],
-  "AI Platforms & APIs": ["OpenAI GPT-4/4o", "Anthropic Claude", "Google Gemini", "Groq", "LangChain", "ChromaDB", "pgvector", "Supabase"],
-  "AI/ML": ["RAG", "Agentic AI Workflows", "Vector Search", "Structured Outputs", "Tool Calling", "Prompt Engineering", "YOLOv8", "OpenCV", "NLP"],
-  "Frontend": ["HTML5", "CSS3", "Tailwind CSS", "Framer Motion"],
-  "Backend & APIs": ["FastAPI", "Node.js", "Express.js", "REST APIs", "SSE Streaming", "PostgreSQL", "MySQL"],
-  "Mobile": ["React Native", "Kotlin", "Java", "iOS (Swift)"],
-  "Database": ["PostgreSQL", "MongoDB", "MySQL", "Supabase", "Firebase"],
-  "Optimization & Delivery": ["Prompt Budgeting", "LLM Cost Tuning", "Inference Efficiency", "GitHub Actions", "CI/CD", "Netlify", "Vercel"],
-  "AI Dev Tools": ["Cursor AI", "Claude Code", "Trae AI", "GitHub Copilot", "ChatGPT", "Windsurf"]
+  "Generative AI & LLMs": ["LLMs", "Generative AI", "RAG", "Agentic AI Workflows", "Multi-Agent Orchestration", "Vector Embeddings", "Fine-Tuning", "MCP", "Prompt Engineering (CoT, Few-Shot, Tool/Function Calling, Structured Outputs, Guardrails, Eval)"],
+  "AI Platforms & APIs": ["OpenAI GPT-4/4o", "Anthropic Claude", "Hugging Face", "LangChain", "LlamaIndex", "Pinecone", "ChromaDB", "Pydantic AI"],
+  "Languages & Frameworks": ["Python", "TypeScript", "JavaScript", "SQL", "Next.js", "React", "React Native", "FastAPI", "Node.js", "Streamlit", "Tailwind CSS"],
+  "ML / Computer Vision": ["PyTorch", "TensorFlow", "OpenCV", "YOLO v8", "NumPy", "Pandas", "scikit-learn", "NLP"],
+  "Automation & Integrations": ["n8n", "Make", "Zapier", "Webhooks", "REST APIs", "SEO & Sales-Lead Automation", "CRM/Marketing Tool Integrations"],
+  "Data & DevOps": ["MySQL", "PostgreSQL", "Supabase", "Git", "GitHub Actions", "CI/CD", "Docker", "Vercel", "Netlify"],
+  "AI Dev Tools": ["Cursor", "Claude Code", "Trae AI", "GitHub Copilot", "Bolt", "v0"]
 }
 
 export const projects = [
   {
     id: 100,
-    title: "CASARA - Automated PR Security Review",
-    description: "A GitHub-native, multi-agent security review system that scans every pull request, grounds LLM agents in deterministic scanner output, computes a composite risk score, and automatically blocks risky merges. Backed by a formal MS/PhD research proposal.",
-    longDescription: "CASARA (Contextual Automated Security Analysis and Risk Assessment) reviews pull requests by orchestrating deterministic scanners (Semgrep, Bandit, Gitleaks) as grounding context for specialized LLM agents (Security and Logic), then cross-validates findings — an issue confirmed by both a scanner and an agent is marked verified. It computes a composite risk score across SAST, SCA, secrets, and context dimensions, hard-blocks merges on any critical or verified-high finding via the GitHub commit-status API, and posts a single consolidated review comment. Built lean and production-pragmatic: FastAPI background tasks (no Celery), in-process SSE, and SQLite — with a real-time Next.js dashboard. Underpinned by a formal research proposal targeting IEEE TSE / ISSTA.",
-    technologies: ["Python", "FastAPI", "Google Gemini", "Multi-Agent", "Semgrep", "Bandit", "Gitleaks", "GitHub API", "DevSecOps", "SAST", "Next.js", "SQLite"],
+    title: "CASARA - Contextual Automated Security Analysis & Risk Assessment",
+    description: "Production-deployed GitHub-native PR reviewer fusing five deterministic scanners (CodeQL, Semgrep, Trivy, Bandit, Gitleaks) with a multi-agent LLM pipeline — Security, Logic, AI-Code, Privacy, and IaC specialists plus Critic + Triage agents — using scanner findings as verified grounding to cut LLM false positives.",
+    longDescription: "CASARA is a production-deployed GitHub-native PR reviewer that fuses five deterministic scanners (CodeQL, Semgrep, Trivy, Bandit, Gitleaks) with a multi-agent LLM pipeline (Security, Logic, AI-Code, Privacy, and IaC specialists plus Critic + Triage agents). By using scanner findings as verified grounding, it significantly cuts LLM false positives. The platform ranks issues by real-world exploitability with EPSS/KEV data, computes a calibrated composite risk score, and auto-blocks high-risk merges via the GitHub Checks API. It also adds longitudinal developer profiling and includes a public 1,200-PR benchmark dataset with a projected F1 of 0.83–0.87. Underpinned by a formal research proposal targeting IEEE TSE / ISSTA.",
+    technologies: ["Python", "Multi-Agent LLMs", "CodeQL", "Semgrep", "Trivy", "Bandit", "Gitleaks", "GitHub Checks API", "FastAPI", "Next.js", "SQLite"],
     category: "Agentic AI",
     featured: true,
-    liveUrl: null,
+    liveUrl: "https://casara.vercel.app",
     githubUrl: "https://github.com/m-sharjeel-saleem/CASARA",
     image: "/projects/casara.svg",
     status: "Active",
     year: "2026",
     features: [
-      "GitHub webhook with HMAC-SHA256 verification and background processing",
-      "Scanner-grounded multi-agent review (Security + Logic agents)",
-      "Cross-validation: findings confirmed by scanner + agent marked verified",
-      "Composite risk score (SAST · SCA · Secrets · Context) with merge gating",
-      "Hard-blocks merges on critical / verified-high findings via commit status",
-      "Real-time Next.js dashboard with live SSE review feed",
-      "Lean architecture — no Celery/Redis; FastAPI tasks + SQLite",
-      "Backed by a formal MS/PhD research proposal"
+      "Production-deployed GitHub-native PR reviewer",
+      "Fuses 5 deterministic scanners (CodeQL, Semgrep, Trivy, Bandit, Gitleaks) with multi-agent LLM pipeline",
+      "Specialists: Security, Logic, AI-Code, Privacy, IaC agents plus Critic + Triage agents",
+      "Grounded agent queries using scanner findings to drastically cut false positives",
+      "Ranks issues by exploitability using real-world EPSS/KEV data",
+      "Computes calibrated composite risk score with automatic merge-gating",
+      "Blocks high-risk merges via the GitHub Checks API",
+      "Adds longitudinal developer profiling & a public 1,200-PR benchmark dataset"
     ]
   },
   {
@@ -661,21 +658,33 @@ export const projects = [
 
 export const experience = [
   {
+    id: 101,
+    position: "AI Automation Developer",
+    company: "Apex AI",
+    companyUrl: "",
+    location: "Remote",
+    duration: "Mar 2026 – Present",
+    type: "Part-time Freelance",
+    description: "Designing and deploying real-time AI automations that integrate language models with SaaS tools (n8n, Make, custom orchestrators) and building end-to-end sales/lead-generation pipelines.",
+    achievements: [
+      "Design and deploy real-time AI automations that integrate LLMs with third-party SaaS tools (CRMs, marketing, data pipelines) to eliminate manual handoffs across business processes.",
+      "Build SEO- and sales-focused lead-generation automations that source, enrich, and qualify prospects end-to-end, driving measurable pipeline lift for client organizations.",
+      "Ship daily-run, production-grade workflows on n8n, Make, and custom Python/TypeScript orchestrators with monitoring, retries, and eval loops for reliable operation at scale."
+    ],
+    technologies: ["n8n", "Make", "Zapier", "Python", "TypeScript", "LLM Integration", "SaaS Automation", "APIs", "Lead Generation"]
+  },
+  {
     id: 25,
     position: "Full-Stack AI Prompt Engineer",
     company: "Sideline Technologies",
     companyUrl: "https://sideline-technologies.com",
-    location: "Remote",
-    duration: "Jun 2025 – Current",
+    location: "Islamabad, Pakistan (On-site)",
+    duration: "Jun 2025 – Feb 2026",
     type: "Full-time",
     description: "Building cross-platform mobile and web applications with applied AI integration, prompt systems, and modern developer tooling for faster, more reliable product delivery.",
     achievements: [
-      "Architect and ship cross-platform web and mobile applications using modern AI-assisted development workflows",
-      "Designed AI-powered product flows that turn unstructured user input into structured, usable outputs",
-      "Use Cursor AI, Claude Code, and Trae AI to speed up implementation, debugging, and delivery quality",
-      "Support product delivery across frontend, backend, prompt logic, and deployment concerns",
-      "Contributed reusable prompt patterns and AI-assisted workflows for the broader team",
-      "Owned Android and iOS app work from implementation through release support"
+      "Architected and shipped cross-platform mobile (iOS/Android) and web apps powered by OpenAI GPT-4 and Anthropic Claude via Cursor, Claude Code, and Trae AI — compressing delivery timelines by ~40%.",
+      "Designed agentic LLM pipelines with structured outputs, tool/function calling, and Supabase-backed retrieval; led prompt-engineering enablement for a 5+ person team (~30% productivity gain)."
     ],
     technologies: ["Python", "TypeScript", "React", "Next.js", "Supabase", "OpenAI", "Claude", "Cursor AI", "Claude Code", "Trae AI", "Mobile Development"]
   },
@@ -684,15 +693,13 @@ export const experience = [
     position: "Prompt Engineer",
     company: "ReactiveSpace",
     companyUrl: "https://reactivespace.com",
-    location: "Remote",
+    location: "Islamabad, Pakistan (On-site)",
     duration: "April 2025 - May 2025",
     type: "Contract",
     description: "Worked on AI prompt engineering, product workflows, and AI-assisted feature delivery for communication-focused software products.",
     achievements: [
-      "Built the Kani Framework application using Next.js, TypeScript, React, and Tailwind CSS",
-      "Created NLP-driven chatbot flows for communication and lead qualification use cases",
-      "Used AI-assisted development workflows to speed up prototyping and shipping",
-      "Contributed prompt design patterns and automation ideas for product workflows"
+      "Built the Kani Framework application (Next.js, TypeScript, React, Tailwind CSS) integrated with Cursor AI for rapid AI-assisted feature delivery.",
+      "Developed an NLP-driven outbound chatbot orchestrated via prompt chains, automating client communication flows and lead qualification."
     ],
     technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Cursor AI", "NLP", "Prompt Engineering", "AI Automation"]
   },
@@ -701,16 +708,12 @@ export const experience = [
     position: "Python Developer",
     company: "Dataventiv LLC",
     companyUrl: "https://dataventiv.com",
-    location: "Remote",
+    location: "United States (Remote)",
     duration: "July 2024 - September 2024",
     type: "Internship",
     description: "Completed a Python-focused internship covering automation, SCADA systems, industrial software workflows, and applied computer-vision projects.",
     achievements: [
-      "Built a Python-based Modbus simulator for automation testing and validation workflows",
-      "Created SCADA interfaces in Ignition Perspective for industrial monitoring use cases",
-      "Implemented new UI features and enhancements inside industrial software dashboards",
-      "Built a face-recognition attendance system with Python, OpenCV, Tkinter, Excel, and MySQL",
-      "Worked across documentation, dashboard design, and applied automation tasks during the internship"
+      "Engineered a Python Modbus simulator eliminating hardware dependency for QA (~50% test setup reduction) and built SCADA dashboards in Ignition Perspective monitoring 10+ real-time industrial data streams."
     ],
     technologies: ["Python", "SCADA", "Ignition Perspective", "OpenCV", "Modbus", "Automation", "Tkinter", "MySQL", "Excel", "Cursor AI", "Data Engineering"]
   }

@@ -58,18 +58,9 @@ CategoryCard.displayName = 'CategoryCard'
 const Skills = () => {
   const { theme } = useTheme()
 
-  const skillCategories: { title: string; skills: string[] }[] = [
-    { title: 'Programming Languages', skills: skillsData['Programming Languages'] },
-    { title: 'JavaScript Libraries & Frameworks', skills: skillsData['JavaScript Libraries & Frameworks'] },
-    { title: 'AI Platforms & APIs', skills: skillsData['AI Platforms & APIs'] },
-    { title: 'AI/ML', skills: skillsData['AI/ML'] },
-    { title: 'Backend & APIs', skills: skillsData['Backend & APIs'] },
-    { title: 'Optimization & Delivery', skills: skillsData['Optimization & Delivery'] },
-    { title: 'AI Dev Tools', skills: skillsData['AI Dev Tools'] },
-    { title: 'Frontend', skills: skillsData['Frontend'] },
-    { title: 'Mobile', skills: skillsData['Mobile'] },
-    { title: 'Database', skills: skillsData['Database'] },
-  ]
+  const skillCategories: { title: string; skills: string[] }[] = Object.entries(skillsData).map(
+    ([title, skills]) => ({ title, skills })
+  )
 
   const bgClass = theme === 'dark' ? 'bg-dark-surface/80' : 'bg-gradient-to-br from-gray-50/90 via-white/90 to-blue-50/30'
   const cardBgClass = theme === 'dark' 

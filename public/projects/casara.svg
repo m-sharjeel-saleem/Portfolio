@@ -1,59 +1,160 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0a111c"/><stop offset="1" stop-color="#070b12"/>
+      <stop stop-color="#060d17"/><stop offset="1" stop-color="#040810"/>
     </linearGradient>
-    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientTransform="translate(200 120) scale(520)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22d3ee" stop-opacity="0.30"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientTransform="translate(180 100) scale(560)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06b6d4" stop-opacity="0.28"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientTransform="translate(1040 100) scale(440)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#34d399" stop-opacity="0.18"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientTransform="translate(1060 80) scale(480)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10b981" stop-opacity="0.18"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="0" cy="0" r="1" gradientTransform="translate(600 500) scale(400)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee" stop-opacity="0.08"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#06b6d4"/><stop offset="0.5" stop-color="#22d3ee"/><stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="acc2" x1="0" y1="0" x2="0" y2="1">
       <stop stop-color="#22d3ee"/><stop offset="1" stop-color="#34d399"/>
     </linearGradient>
     <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#fff"/><stop offset="0.6" stop-color="#67e8f9"/><stop offset="1" stop-color="#34d399"/>
+      <stop stop-color="#ffffff"/><stop offset="0.5" stop-color="#67e8f9"/><stop offset="1" stop-color="#6ee7b7"/>
     </linearGradient>
-    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
-      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.05"/>
+    <linearGradient id="shield-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#22d3ee" stop-opacity="0.15"/><stop offset="1" stop-color="#10b981" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.025" stroke-width="0.5"/>
     </pattern>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#ffffff" fill-opacity="0.04"/>
+    </pattern>
+    <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+    </filter>
   </defs>
 
+  <!-- Background layers -->
   <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
   <rect width="1200" height="675" fill="url(#dots)"/>
   <rect width="1200" height="675" fill="url(#glow1)"/>
   <rect width="1200" height="675" fill="url(#glow2)"/>
+  <rect width="1200" height="675" fill="url(#glow3)"/>
 
-  <!-- Logo + wordmark -->
-  <g transform="translate(96 92)">
-    <path d="M34 4 L60 13 V33 C60 49 50 60 34 64 C18 60 8 49 8 33 V13 Z" fill="url(#acc)" fill-opacity="0.12" stroke="url(#acc)" stroke-width="2.5"/>
-    <circle cx="34" cy="33" r="15" stroke="url(#acc)" stroke-width="2" stroke-opacity="0.5"/>
-    <circle cx="34" cy="33" r="8" stroke="url(#acc)" stroke-width="2" stroke-opacity="0.8"/>
-    <path d="M34 33 L34 18" stroke="url(#acc)" stroke-width="2.5" stroke-linecap="round"/>
-    <circle cx="42" cy="40" r="3" fill="#34d399"/>
-    <text x="84" y="30" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#ffffff">CASARA</text>
-    <text x="85" y="56" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#7d8aa0">Contextual Automated Security Analysis &amp; Risk Assessment</text>
+  <!-- Shield Logo -->
+  <g transform="translate(96 72)">
+    <!-- Shield outer -->
+    <path d="M36 2 L68 14 V40 C68 60 54 74 36 78 C18 74 4 60 4 40 V14 Z" fill="url(#shield-fill)" stroke="url(#acc)" stroke-width="2.5"/>
+    <!-- Radar circles -->
+    <circle cx="36" cy="36" r="22" stroke="url(#acc)" stroke-width="1" stroke-opacity="0.25" fill="none"/>
+    <circle cx="36" cy="36" r="15" stroke="url(#acc)" stroke-width="1.5" stroke-opacity="0.4" fill="none"/>
+    <circle cx="36" cy="36" r="8" stroke="url(#acc)" stroke-width="1.5" stroke-opacity="0.6" fill="none"/>
+    <!-- Radar sweep -->
+    <path d="M36 36 L36 14" stroke="url(#acc2)" stroke-width="2" stroke-linecap="round" stroke-opacity="0.9"/>
+    <path d="M36 36 L52 22" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.5"/>
+    <!-- Node indicators -->
+    <circle cx="36" cy="36" r="3" fill="#22d3ee"/>
+    <circle cx="46" cy="46" r="2.5" fill="#10b981"/>
+    <circle cx="26" cy="48" r="2" fill="#06b6d4" fill-opacity="0.7"/>
+    <!-- Circuit traces from shield -->
+    <line x1="68" y1="30" x2="80" y2="30" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="68" y1="45" x2="78" y2="45" stroke="#10b981" stroke-width="1" stroke-opacity="0.3"/>
+    <circle cx="80" cy="30" r="1.5" fill="#22d3ee" fill-opacity="0.5"/>
+    <circle cx="78" cy="45" r="1.5" fill="#10b981" fill-opacity="0.5"/>
+
+    <!-- Wordmark -->
+    <text x="92" y="32" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" letter-spacing="3" fill="#ffffff">CASARA</text>
+    <text x="93" y="56" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6b7d94" letter-spacing="0.5">Contextual Automated Security Analysis &amp; Risk Assessment</text>
+  </g>
+
+  <!-- Status badge -->
+  <g transform="translate(1020 86)">
+    <rect width="84" height="30" rx="15" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="18" cy="15" r="4" fill="#10b981"/>
+    <text x="30" y="20" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6ee7b7">ACTIVE</text>
   </g>
 
   <!-- Headline -->
-  <text x="96" y="300" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="800" fill="url(#title)">Automated security review</text>
-  <text x="96" y="368" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="800" fill="#e6edf5">for every pull request.</text>
-  <text x="98" y="414" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8493a8">Scanner-grounded multi-agent analysis · composite risk score · automatic merge gating</text>
+  <text x="96" y="268" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" fill="url(#title)">AI-powered security review</text>
+  <text x="96" y="334" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" fill="#dce4ee">for every pull request.</text>
 
-  <!-- Pipeline motif -->
-  <g transform="translate(96 480)" font-family="Inter, system-ui, sans-serif">
-    <line x1="150" y1="44" x2="1010" y2="44" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
-    <g font-size="14" font-weight="600">
-      <g transform="translate(0 0)"><rect width="160" height="88" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5"/><text x="20" y="34" fill="#e6edf5">Webhook</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">HMAC verify</text></g>
-      <g transform="translate(205 0)"><rect width="160" height="88" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5"/><text x="20" y="34" fill="#e6edf5">Scanners</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">Semgrep·Bandit·Gitleaks</text></g>
-      <g transform="translate(410 0)"><rect width="160" height="88" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5"/><text x="20" y="34" fill="#e6edf5">Agents</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">Security·Logic</text></g>
-      <g transform="translate(615 0)"><rect width="160" height="88" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5"/><text x="20" y="34" fill="#e6edf5">Risk Score</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">composite + gate</text></g>
-      <g transform="translate(820 0)"><rect width="190" height="88" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#34d399" stroke-opacity="0.55"/><text x="20" y="34" fill="#e6edf5">PR Gate</text><text x="20" y="62" font-size="12" font-weight="400" fill="#73839a">block / pass</text></g>
+  <!-- Subtitle -->
+  <text x="98" y="382" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#6b7d94">Scanner-grounded multi-agent analysis · composite risk scoring · automatic merge gating</text>
+
+  <!-- Pipeline visualization -->
+  <g transform="translate(96 434)" font-family="Inter, system-ui, sans-serif">
+    <!-- Connecting line -->
+    <line x1="0" y1="104" x2="1008" y2="104" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2" stroke-dasharray="6 4"/>
+
+    <!-- Animated pulse dots on line -->
+    <circle cx="170" cy="104" r="3" fill="#22d3ee" fill-opacity="0.5"/>
+    <circle cx="365" cy="104" r="3" fill="#22d3ee" fill-opacity="0.4"/>
+    <circle cx="570" cy="104" r="3" fill="#10b981" fill-opacity="0.4"/>
+    <circle cx="775" cy="104" r="3" fill="#10b981" fill-opacity="0.5"/>
+
+    <g font-size="13" font-weight="600">
+      <!-- Node 1: Webhook -->
+      <g transform="translate(0 52)">
+        <rect width="165" height="100" rx="14" fill="#ffffff" fill-opacity="0.025" stroke="#06b6d4" stroke-opacity="0.45" stroke-width="1.5"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#06b6d4" fill-opacity="0.12"/>
+        <text x="20" y="34" font-size="16" fill="#22d3ee">⚡</text>
+        <text x="52" y="34" fill="#e1e8f0">Webhook</text>
+        <text x="14" y="72" font-size="11" font-weight="400" fill="#5a6e82">HMAC-SHA256 verify</text>
+        <text x="14" y="86" font-size="11" font-weight="400" fill="#5a6e82">background tasks</text>
+      </g>
+
+      <!-- Node 2: Scanners -->
+      <g transform="translate(195 52)">
+        <rect width="165" height="100" rx="14" fill="#ffffff" fill-opacity="0.025" stroke="#06b6d4" stroke-opacity="0.45" stroke-width="1.5"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#06b6d4" fill-opacity="0.12"/>
+        <text x="20" y="34" font-size="16" fill="#22d3ee">🔍</text>
+        <text x="52" y="34" fill="#e1e8f0">Scanners</text>
+        <text x="14" y="72" font-size="11" font-weight="400" fill="#5a6e82">Semgrep · Bandit</text>
+        <text x="14" y="86" font-size="11" font-weight="400" fill="#5a6e82">Gitleaks</text>
+      </g>
+
+      <!-- Node 3: AI Agents -->
+      <g transform="translate(390 52)">
+        <rect width="175" height="100" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1.5"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#22d3ee" fill-opacity="0.15"/>
+        <text x="20" y="34" font-size="16" fill="#67e8f9">🤖</text>
+        <text x="52" y="34" fill="#e1e8f0">AI Agents</text>
+        <text x="14" y="72" font-size="11" font-weight="400" fill="#5a6e82">Security + Logic LLMs</text>
+        <text x="14" y="86" font-size="11" font-weight="400" fill="#5a6e82">cross-validation</text>
+      </g>
+
+      <!-- Node 4: Risk Score -->
+      <g transform="translate(595 52)">
+        <rect width="175" height="100" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#10b981" stroke-opacity="0.45" stroke-width="1.5"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#10b981" fill-opacity="0.12"/>
+        <text x="20" y="34" font-size="16" fill="#6ee7b7">📊</text>
+        <text x="52" y="34" fill="#e1e8f0">Risk Score</text>
+        <text x="14" y="72" font-size="11" font-weight="400" fill="#5a6e82">SAST·SCA·Secrets</text>
+        <text x="14" y="86" font-size="11" font-weight="400" fill="#5a6e82">composite scoring</text>
+      </g>
+
+      <!-- Node 5: Merge Gate -->
+      <g transform="translate(800 52)">
+        <rect width="208" height="100" rx="14" fill="#ffffff" fill-opacity="0.035" stroke="#10b981" stroke-opacity="0.6" stroke-width="1.5"/>
+        <rect x="12" y="12" width="32" height="32" rx="8" fill="#10b981" fill-opacity="0.15"/>
+        <text x="20" y="34" font-size="16" fill="#6ee7b7">🛡️</text>
+        <text x="52" y="34" fill="#e1e8f0">Merge Gate</text>
+        <text x="14" y="72" font-size="11" font-weight="400" fill="#5a6e82">block critical / verified-high</text>
+        <text x="14" y="86" font-size="11" font-weight="400" fill="#5a6e82">GitHub commit status</text>
+      </g>
     </g>
   </g>
 
-  <g transform="translate(96 624)" font-family="JetBrains Mono, monospace" font-size="13" fill="#73839a">
-    <text x="0" y="0">Python · FastAPI · Gemini · multi-agent · SAST · DevSecOps · Next.js</text>
+  <!-- Tech stack footer -->
+  <g transform="translate(96 632)" font-family="JetBrains Mono, Fira Code, monospace" font-size="13">
+    <text x="0" y="0" fill="#4a5e72">Python · FastAPI · Google Gemini · Multi-Agent · Semgrep · DevSecOps · Next.js · SSE</text>
+  </g>
+
+  <!-- Research badge -->
+  <g transform="translate(96 608)">
+    <rect width="240" height="22" rx="4" fill="#06b6d4" fill-opacity="0.08" stroke="#06b6d4" stroke-opacity="0.2" stroke-width="0.5"/>
+    <text x="10" y="15" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#67e8f9" letter-spacing="0.5">📄 BACKED BY MS/PhD RESEARCH PROPOSAL</text>
   </g>
 </svg>
